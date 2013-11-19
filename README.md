@@ -1,3 +1,3 @@
-## Folder for Google Tag Manager
+## Folders for Google Tag Manager
 
-A simple extension to add folder to GTM
+A simple Chrome extension to add folders to GTM
