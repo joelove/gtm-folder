@@ -1,4 +1,3 @@
-gtm-folder
-==========
+## Folder for Google Tag Manager
 
-A simple extension to add folders to Google Tag Manager
+A simple extension to add folder to GTM
