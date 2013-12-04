@@ -1,0 +1,15 @@
+.ID-tm-block li.hidden > ul {
+	display: none;
+}
+
+.ID-tm-block li:before {
+	position: absolute;
+	margin-left: -1em;
+	content: '-';
+	display: inline-block;
+	width: 1em;
+}
+
+.ID-tm-block li.hidden:before {
+	content: '+';
+}
