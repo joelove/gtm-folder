@@ -12,13 +12,12 @@ function setProperty(object, keys, value) {
 
 	var observer = new MutationObserver(function(mutations, observer) {
 		var loaded = document.querySelector('.ID-tm-block'),
+			hasClass = document.querySelector('.ID-tm-block.GTM-FOLDERS'),
 			elementData = [[], [], []], elementDataLength,
 			tagStructure = {}, conditionStructure = {}, macroStructure = {},
 			tags, conditions, macros, all, allLength, element, elementList, elementListLength, a, div;
 
-		if(loaded) {
-			stopObserver();
-			
+		if(loaded && !hasClass) {
 			all = [
 				document.querySelectorAll('.P_NAVPANEL_SUBMENU .ID-tm-tags-block li'),
 				document.querySelectorAll('.P_NAVPANEL_SUBMENU .ID-tm-conditions-block li'),
@@ -128,12 +127,9 @@ function setProperty(object, keys, value) {
 			addTags(conditionStructure, conditionContainer);
 			addTags(macroStructure, macroContainer);
 
+			loaded.className += ' GTM-FOLDERS';
 		}
 	});
-
-	function stopObserver() {
-		observer.disconnect();
-	}
 
 	// define what element should be observed by the observer
 	// and what types of mutations trigger the callback
