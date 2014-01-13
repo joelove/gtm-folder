@@ -1,15 +1,17 @@
-.ID-tm-block li.hidden > ul {
-	display: none;
+.P_NAVPANEL .P_NAVPANEL_SUBMENU_BLOCK {
+	margin-left: 0px !important;
+	padding-left: 0px !important;
 }
 
-.ID-tm-block li:before {
-	position: absolute;
-	margin-left: -1em;
-	content: '-';
-	display: inline-block;
-	width: 1em;
+.P_NAVPANEL .P_NAVPANEL_MENU_BLOCK .P_NAVPANEL_SUBMENU .P_NAVPANEL_ITEM .G_LINK div {
+	text-indent: 0 !important;
+	font-weight: normal;
 }
 
-.ID-tm-block li.hidden:before {
-	content: '+';
+.P_NAVPANEL .P_NAVPANEL_GROUP {
+	font-weight: normal !important;
+}
+
+a.G-LINK {
+	color: #1155cc;
 }
