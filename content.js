@@ -116,16 +116,6 @@ function setProperty(object, keys, value) {
 
 						li.appendChild(text);
 						li.appendChild(ul);
-
-						li.addEventListener("click", function(e){
-							if (this.classList.contains('hidden')) {
-								this.className = this.className.replace(/\b(?:\s+)?hidden(?:\s+)?\b/,'');
-							} else {
-								this.className += ' hidden';
-							}
-							e.stopPropagation();
-						}, false);
-
 						targetContainer.appendChild(li);
 
 						addTags(tagStructure[i], ul);
